@@ -13,6 +13,11 @@ code {
     monospace;
 }
 
+.darkmode {
+  background-color: black;
+  color: white;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -43,7 +48,6 @@ code {
   grid-gap: 8px;
 }
 .row > .operator.doublewidth {
-  /* border: 1px solid pink; */
   grid-column: span 2;
 }
 
@@ -58,7 +62,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  border: 1px solid rgba(0, 0, 0, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.9);
 }
 button:active {
   background-color: aliceblue;
@@ -66,7 +70,7 @@ button:active {
 }
 
 .toggles {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgb(220, 220, 220);
   color: rgba(0, 0, 0, 1);
 }
 
