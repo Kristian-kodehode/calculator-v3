@@ -7,9 +7,15 @@ function App() {
     setDarkMode((prevMode) => !prevMode);
   };
   return (
-    <div className="app">
+    <div>
       <h1>Calculator</h1>
-      <Calculator />
+      <label className="themeselector">
+        Theme selector
+        <input type="checkbox" checked={darkMode} onChange={handleToggle} />
+      </label>
+      <div className="container">
+        <Calculator darkMode={darkMode} />
+      </div>
     </div>
   );
 }

@@ -87,7 +87,7 @@ const Calculator = ({ darkMode }) => {
 
   return (
     <div className="container">
-      <div className="calculator">
+      <div className={`calculator ${darkMode ? "darkmode" : ""}`}>
         <div className="display">{displayValue}</div>
         <div className="keypad">
           <div className="row">
