@@ -9,16 +9,13 @@ function App() {
   return (
     <div>
       <h1>Calculator</h1>
-      <label className="themeselector">
-        Theme selector
+      <div className="container">
         <input
           type="checkbox"
-          className="checkmark"
+          className="themeselector"
           checked={darkMode}
           onChange={handleToggle}
         />
-      </label>
-      <div className="container">
         <Calculator darkMode={darkMode} />
       </div>
     </div>
