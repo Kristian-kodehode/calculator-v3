@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Calculator = () => {
+const Calculator = ({ darkMode }) => {
   const [displayValue, setDisplayValue] = useState("0");
   const [firstOperand, setFirstOperand] = useState(null);
   const [operator, setOperator] = useState(null);
@@ -87,7 +87,7 @@ const Calculator = () => {
 
   return (
     <div className="container">
-      <div className="calculator">
+      <div className={`calculator ${darkMode ? "darkmode" : ""}`}>
         <div className="display">{displayValue}</div>
         <div className="keypad">
           <div className="row">
