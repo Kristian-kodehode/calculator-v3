@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.calculator {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border: 1px solid black;
+}
+
+.display {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 16px 9px;
+}
+
+.keypad {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 8px;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 8px;
+}
+.row > .operator.doublewidth {
+  /* border: 1px solid pink; */
+  grid-column: span 2;
+}
+
+button {
+  min-width: 40px;
+  min-height: 40px;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  border: 1px solid rgba(0, 0, 0, 0.9);
+}
+button:active {
+  background-color: aliceblue;
+  color: orange;
+}
+
+.toggles {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 1);
+}
+
+.operator {
+  background-color: orange;
+}
+
+.operators {
+  background-color: orange;
+}
+.operators:focus {
+  background-color: aliceblue;
+  color: orange;
+}
