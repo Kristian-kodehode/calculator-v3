@@ -9,11 +9,7 @@ function App() {
   return (
     <div className="app">
       <h1>Calculator</h1>
-      <label>
-        Theme selector
-        <input type="checkbox" checked={darkMode} onChange={handleToggle} />
-      </label>
-      <Calculator darkMode={darkMode} />
+      <Calculator />
     </div>
   );
 }
