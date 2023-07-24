@@ -13,10 +13,12 @@ code {
     monospace;
 }
 .themeselector {
-  padding: 8px;
-}
-.themeselector input[type="checkbox"] {
+  padding: 12px;
   width: 100px;
+}
+.checkbox-container {
+  display: flex;
+  align-items: center;
 }
 
 .darkmode {
