@@ -16,7 +16,19 @@ code {
   font-size: 12px;
   padding: 8px;
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.checkmark {
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+input {
+  background-color: aqua;
+}
+
 .darkmode {
   background-color: black;
   color: white;

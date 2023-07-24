@@ -11,7 +11,12 @@ function App() {
       <h1>Calculator</h1>
       <label className="themeselector">
         Theme selector
-        <input type="checkbox" checked={darkMode} onChange={handleToggle} />
+        <input
+          type="checkbox"
+          className="checkmark"
+          checked={darkMode}
+          onChange={handleToggle}
+        />
       </label>
       <div className="container">
         <Calculator darkMode={darkMode} />
