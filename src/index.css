@@ -12,7 +12,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
+.themeselector {
+  font-size: 12px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
 .darkmode {
   background-color: black;
   color: white;
