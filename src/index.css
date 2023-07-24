@@ -15,6 +15,9 @@ code {
 .themeselector {
   padding: 8px;
 }
+.themeselector input[type="checkbox"] {
+  width: 100px;
+}
 
 .darkmode {
   background-color: black;
