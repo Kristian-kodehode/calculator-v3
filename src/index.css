@@ -1,5 +1,13 @@
-body {
+*,
+*::before,
+*::after {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* margin: 0; */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -30,13 +38,14 @@ code {
 }
 
 .calculator {
-  width: 350px;
-  max-height: 700px;
+  max-width: 400px;
+  /* max-height: 700px; */
+  height: 100%;
   padding: 16px;
   display: flex;
   flex-direction: column;
   /* align-items: flex-end; */
-  border: 3px solid coral;
+  /* border: 3px solid coral; */
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(20px);
   border-radius: 8px;
@@ -117,7 +126,7 @@ button:active {
   content: "";
   position: fixed;
   width: 300%;
-  height: 100%;
+  height: 100vh;
   top: 45%;
   left: 50%;
   background-color: coral;
