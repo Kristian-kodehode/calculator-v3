@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const Calculator = ({ darkMode }) => {
   const [displayValue, setDisplayValue] = useState("0");
@@ -134,7 +134,7 @@ const Calculator = ({ darkMode }) => {
             </button>
             <button onClick={() => inputDecimal()}>.</button>
             <button
-              className="operator doublewidth"
+              className="operators doublewidth"
               onClick={() => performOperation("=")}
             >
               =
