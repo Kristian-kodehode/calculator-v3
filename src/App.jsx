@@ -8,7 +8,7 @@ function App() {
   };
   return (
     <div className="page">
-      <h1>Calculator</h1>
+      {/* <h1>Calculator</h1> */}
       <div className="">
         <div className="checkbox-container">
           <input

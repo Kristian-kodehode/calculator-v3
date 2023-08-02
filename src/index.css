@@ -59,7 +59,9 @@ code {
 }
 
 .display {
-  border: 1px solid black;
+  border: 1px solid #d5ffe4;
+  background-color: hsla(141, 100%, 92%, 0.3);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
   width: 100%;
   font-size: 80px;
   padding-right: 6px;
