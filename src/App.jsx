@@ -7,7 +7,7 @@ function App() {
     setDarkMode((prevMode) => !prevMode);
   };
   return (
-    <div>
+    <div className="page">
       <h1>Calculator</h1>
       <div className="container">
         <div className="checkbox-container">

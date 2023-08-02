@@ -16,19 +16,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-.themeselector {
-  padding: 12px;
-  width: 100px;
-}
+
 .checkbox-container {
   display: flex;
   align-items: center;
-}
-
-.darkmode {
-  background-color: black;
-  color: white;
-  border: 1px solid white;
 }
 
 .container {
@@ -39,17 +30,29 @@ code {
 }
 
 .calculator {
+  width: 350px;
+  max-height: 700px;
   padding: 16px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  border: 1px solid black;
+  /* align-items: flex-end; */
+  border: 3px solid coral;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  border-radius: 8px;
+}
+.darkmode {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
 }
 
 .display {
-  font-size: 32px;
+  font-size: 80px;
+  padding-right: 6px;
   font-weight: bold;
   margin: 16px 9px;
+  text-align: end;
 }
 
 .keypad {
@@ -62,13 +65,10 @@ code {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 8px;
 }
-.row > .operators.doublewidth {
-  grid-column: span 2;
-}
 
 button {
-  min-width: 40px;
-  min-height: 40px;
+  min-width: 80px;
+  height: 80px;
   font-size: 16px;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 100px;
@@ -83,6 +83,9 @@ button:active {
   background-color: aliceblue;
   color: orange;
 }
+.row > .operators.doublewidth {
+  grid-column: span 2;
+}
 
 .toggles {
   background-color: rgb(220, 220, 220);
@@ -95,4 +98,45 @@ button:active {
 .operators:focus {
   background-color: aliceblue;
   color: orange;
+}
+
+/*
+
+
+
+
+
+
+*/
+
+.page {
+  height: 100vh;
+}
+
+.page::before {
+  content: "";
+  position: fixed;
+  width: 300%;
+  height: 100%;
+  top: 45%;
+  left: 50%;
+  background-color: coral;
+  /* background-color: #0075ff; */
+  border-radius: 50%;
+  transform: translateX(-50%) skew(0, -10deg);
+  animation: wave 7s ease-in-out infinite alternate;
+  -webkit-animation: wave 7s ease-in-out infinite alternate;
+  z-index: -1;
+}
+@keyframes wave {
+  from {
+    transform: translateX(-50%) skew(0, -5deg);
+  }
+  to {
+    transform: translateX(-30%) skew(10deg, 0);
+    -webkit-transform: translateX(-30%) skew(10deg, 0);
+    -moz-transform: translateX(-30%) skew(10deg, 0);
+    -ms-transform: translateX(-30%) skew(10deg, 0);
+    -o-transform: translateX(-30%) skew(10deg, 0);
+  }
 }
