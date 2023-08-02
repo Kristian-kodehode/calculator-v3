@@ -101,7 +101,7 @@ const Calculator = ({ darkMode }) => {
               %
             </button>
             <button className="operators" onClick={() => performOperation("/")}>
-              /
+              ÷
             </button>
           </div>
           <div className="row">
@@ -109,7 +109,7 @@ const Calculator = ({ darkMode }) => {
             <button onClick={() => inputDigit("8")}>8</button>
             <button onClick={() => inputDigit("9")}>9</button>
             <button className="operators" onClick={() => performOperation("*")}>
-              *
+              ×
             </button>
           </div>
           <div className="row">
@@ -117,7 +117,7 @@ const Calculator = ({ darkMode }) => {
             <button onClick={() => inputDigit("5")}>5</button>
             <button onClick={() => inputDigit("6")}>6</button>
             <button className="operators" onClick={() => performOperation("-")}>
-              -
+              −
             </button>
           </div>
           <div className="row">
