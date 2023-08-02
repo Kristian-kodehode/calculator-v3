@@ -8,6 +8,10 @@ body {
   text-align: center;
 }
 
+:root {
+  --col-orange: orange;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -23,6 +27,11 @@ code {
 
 .darkmode {
   background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+.weirdmode {
+  background-color: coral;
   color: white;
   border: 1px solid white;
 }
