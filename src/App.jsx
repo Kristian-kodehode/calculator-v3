@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="page">
       <h1>Calculator</h1>
-      <div className="container">
+      <div className="">
         <div className="checkbox-container">
           <input
             type="checkbox"

@@ -31,6 +31,9 @@ code {
 }
 
 .container {
+  /* height: 100vh; */
+  /* margin-top: 80px; */
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,16 +42,15 @@ code {
 
 .calculator {
   max-width: 400px;
-  /* max-height: 700px; */
-  height: 100%;
   padding: 16px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: end;
   /* align-items: flex-end; */
   /* border: 3px solid coral; */
-  background-color: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(20px);
   border-radius: 8px;
+  /* box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1); */
 }
 .darkmode {
   background-color: black;
@@ -57,10 +59,12 @@ code {
 }
 
 .display {
+  border: 1px solid black;
+  width: 100%;
   font-size: 80px;
   padding-right: 6px;
   font-weight: bold;
-  margin: 16px 9px;
+  margin: 32px 9px;
   text-align: end;
 }
 
@@ -119,7 +123,10 @@ button:active {
 */
 
 .page {
+  padding-top: 40px;
   height: 100vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
 }
 
 .page::before {
@@ -129,7 +136,7 @@ button:active {
   height: 100vh;
   top: 45%;
   left: 50%;
-  background-color: coral;
+  background-color: #d5ffe4;
   /* background-color: #0075ff; */
   border-radius: 50%;
   transform: translateX(-50%) skew(0, -10deg);
@@ -147,5 +154,18 @@ button:active {
     -moz-transform: translateX(-30%) skew(10deg, 0);
     -ms-transform: translateX(-30%) skew(10deg, 0);
     -o-transform: translateX(-30%) skew(10deg, 0);
+  }
+}
+
+/*
+
+
+
+MEDIA QUERY
+*/
+@media only screen and (min-width: 600px) {
+  .calculator {
+    border-radius: 8px;
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
   }
 }
