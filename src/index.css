@@ -117,6 +117,11 @@ button:active {
   background-color: aliceblue;
   color: orange;
 }
+.togglebutton {
+  font-size: 14px;
+  /* height: 48px; */
+  padding: 0px 16px;
+}
 .row > .operators.doublewidth {
   grid-column: span 2;
 }

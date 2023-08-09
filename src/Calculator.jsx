@@ -6,6 +6,11 @@ const Calculator = () => {
   const [operator, setOperator] = useState(null);
   const [waitingForSecondOperand, setWaitingForSecondOperand] = useState(false);
 
+  const [darkMode, setDarkMode] = useState(false);
+  const handleToggle = () => {
+    setDarkMode((prevMode) => !prevMode);
+  };
+
   const inputDigit = (digit) => {
     if (waitingForSecondOperand) {
       setDisplayValue(digit);
@@ -89,7 +94,10 @@ const Calculator = () => {
 
   return (
     <div className="container">
-      <div className="calculator">
+      <div className={`calculator ${darkMode ? "darkmode" : ""}`}>
+        <button className="togglebutton" onClick={handleToggle}>
+          theme
+        </button>
         <div className="display">{displayValue}</div>
         <div className="keypad">
           <div className="row">
