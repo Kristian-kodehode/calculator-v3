@@ -10,16 +10,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* <div className="checkbox-container">
-        <label htmlFor="myCheckbox">Mode</label>
-        <input
-          id="myCheckbox"
-          type="checkbox"
-          className="themeselector"
-          checked={darkMode}
-          onChange={handleToggle}
-        />
-      </div> */
-}

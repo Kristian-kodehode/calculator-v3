@@ -57,8 +57,8 @@ code {
 }
 
 .calculator {
-  max-width: 400px;
-  max-height: 800px;
+  width: 375px;
+  height: 700px;
   padding: 16px 16px 48px 16px;
   display: flex;
   flex-direction: column;
@@ -69,24 +69,28 @@ code {
 .darkmode {
   background-color: #012030;
   color: #dafdba;
-  border: 1px solid white;
+  border: 1px solid #dafdba;
+}
+.darkmode:hover {
+  background-color: #012030;
 }
 
 .display {
-  border: 1px solid #d5ffe4;
+  /* border: 1px solid #d5ffe4;
   background: linear-gradient(
     to right bottom,
     hsla(91, 94%, 86%, 0.4),
     hsla(91, 94%, 86%, 0.1)
-  );
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  ); */
+  /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); */
   width: 100%;
   font-size: 80px;
   padding-right: 6px;
   font-weight: bold;
-  margin: 40px 8px 32px;
+  margin: 30px 8px 32px;
   text-align: end;
-  height: 100%;
+  /* height: 100%; */
+  overflow: hidden;
 }
 
 .keypad {
@@ -111,7 +115,8 @@ button {
   cursor: pointer;
 }
 button:hover {
-  border: 1px solid rgba(255, 255, 255, 0.9);
+  /* border: 1px solid rgba(255, 255, 255, 0.9); */
+  border: 1px solid #dafdba;
 }
 button:active {
   background-color: aliceblue;

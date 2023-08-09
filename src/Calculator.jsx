@@ -114,7 +114,7 @@ const Calculator = () => {
               ÷
             </button>
           </div>
-          <div className="row">
+          <div className="row ">
             <button onClick={() => inputDigit("7")}>7</button>
             <button onClick={() => inputDigit("8")}>8</button>
             <button onClick={() => inputDigit("9")}>9</button>
