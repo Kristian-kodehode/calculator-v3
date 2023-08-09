@@ -28,10 +28,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+/* .themeselector {
+  background-color: #1e8ed8;
+  border: 1px solid black;
+} */
 
 .checkbox-container {
-  display: flex;
-  align-items: center;
+  background-color: #1e8ed8;
+}
+.checkbox-container input {
+  background-color: #1e8ed8;
+  height: 24px;
+  width: 24px;
+}
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #d5fdff;
 }
 
 .container {
@@ -53,8 +64,8 @@ code {
   backdrop-filter: blur(10px);
 }
 .darkmode {
-  background-color: black;
-  color: white;
+  background-color: #012030;
+  color: #dafdba;
   border: 1px solid white;
 }
 
@@ -92,7 +103,7 @@ button {
   font-size: 32px;
   border: 1px solid rgba(0, 0, 0, 0);
   border-radius: 100px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #012030;
   color: white;
   cursor: pointer;
 }
