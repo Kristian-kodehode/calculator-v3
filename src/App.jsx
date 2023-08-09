@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+// import React from "react";
 import Calculator from "./Calculator";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-  const handleToggle = () => {
-    setDarkMode((prevMode) => !prevMode);
-  };
+  // const [darkMode, setDarkMode] = useState(false);
+  // const handleToggle = () => {
+  //   setDarkMode((prevMode) => !prevMode);
+  // };
   return (
     <div className="page ">
-      <Calculator darkMode={darkMode} />
+      <Calculator />
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Calculator = ({ darkMode, handleToggle }) => {
+const Calculator = () => {
   const [displayValue, setDisplayValue] = useState("0");
   const [firstOperand, setFirstOperand] = useState(null);
   const [operator, setOperator] = useState(null);
@@ -89,7 +89,7 @@ const Calculator = ({ darkMode, handleToggle }) => {
 
   return (
     <div className="container">
-      <div className={`calculator ${darkMode ? "darkmode" : ""}`}>
+      <div>
         <div className="display">{displayValue}</div>
         <div className="keypad">
           <div className="row">
@@ -143,16 +143,6 @@ const Calculator = ({ darkMode, handleToggle }) => {
             </button>
           </div>
         </div>
-      </div>
-      <div className="checkbox-container">
-        <label htmlFor="myCheckbox">Mode</label>
-        <input
-          id="myCheckbox"
-          type="checkbox"
-          className="themeselector"
-          checked={darkMode}
-          onChange={handleToggle}
-        />
       </div>
     </div>
   );
