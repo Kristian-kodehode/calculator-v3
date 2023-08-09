@@ -7,7 +7,7 @@ function App() {
   //   setDarkMode((prevMode) => !prevMode);
   // };
   return (
-    <div className="page ">
+    <div className="page">
       <Calculator />
     </div>
   );

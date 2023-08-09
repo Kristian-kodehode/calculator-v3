@@ -89,7 +89,7 @@ const Calculator = () => {
 
   return (
     <div className="container">
-      <div>
+      <div className="calculator">
         <div className="display">{displayValue}</div>
         <div className="keypad">
           <div className="row">
