@@ -85,6 +85,8 @@ const Calculator = ({ darkMode }) => {
     });
   };
 
+  //KEY EVENTS:
+
   return (
     <div className="container">
       <div className={`calculator ${darkMode ? "darkmode" : ""}`}>
