@@ -37,9 +37,7 @@ code {
   background-color: #1e8ed8;
 }
 .checkbox-container input {
-  background-color: #1e8ed8;
-  height: 24px;
-  width: 24px;
+  display: none;
 }
 .checkbox-container input:checked ~ .checkmark {
   background-color: #d5fdff;

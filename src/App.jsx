@@ -11,15 +11,16 @@ function App() {
       {/* <h1>Calculator</h1> */}
       <div className="modeswitch-container">
         <div className="checkbox-container">
-          <label htmlFor="themeselector">Mode</label>
+          <label htmlFor="myCheckbox">Mode</label>
           <input
+            id="myCheckbox"
             type="checkbox"
             className="themeselector"
             checked={darkMode}
             onChange={handleToggle}
           />
-          <Calculator darkMode={darkMode} />
         </div>
+        <Calculator darkMode={darkMode} />
       </div>
     </div>
   );
