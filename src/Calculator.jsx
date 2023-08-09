@@ -95,9 +95,9 @@ const Calculator = () => {
   return (
     <div className="container">
       <div className={`calculator ${darkMode ? "darkmode" : ""}`}>
-        <button className="togglebutton" onClick={handleToggle}>
-          theme
-        </button>
+        <div className="togglebutton" onClick={handleToggle}>
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </div>
         <div className="display">{displayValue}</div>
         <div className="keypad">
           <div className="row">

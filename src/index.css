@@ -118,10 +118,14 @@ button:active {
   color: orange;
 }
 .togglebutton {
-  font-size: 14px;
-  /* height: 48px; */
-  padding: 0px 16px;
+  cursor: pointer;
+  font-size: 24px;
+  padding-right: 20px;
+  /* background-color: #1e8ed8; */
+  width: 100%;
+  text-align: end;
 }
+
 .row > .operators.doublewidth {
   grid-column: span 2;
 }
