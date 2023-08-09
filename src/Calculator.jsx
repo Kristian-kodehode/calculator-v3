@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Calculator = ({ darkMode }) => {
+const Calculator = ({ darkMode, handleToggle }) => {
   const [displayValue, setDisplayValue] = useState("0");
   const [firstOperand, setFirstOperand] = useState(null);
   const [operator, setOperator] = useState(null);
@@ -143,6 +143,16 @@ const Calculator = ({ darkMode }) => {
             </button>
           </div>
         </div>
+      </div>
+      <div className="checkbox-container">
+        <label htmlFor="myCheckbox">Mode</label>
+        <input
+          id="myCheckbox"
+          type="checkbox"
+          className="themeselector"
+          checked={darkMode}
+          onChange={handleToggle}
+        />
       </div>
     </div>
   );

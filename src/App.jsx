@@ -7,23 +7,23 @@ function App() {
     setDarkMode((prevMode) => !prevMode);
   };
   return (
-    <div className="page page2">
-      {/* <h1>Calculator</h1> */}
-      <div className="modeswitch-container">
-        <div className="checkbox-container">
-          <label htmlFor="myCheckbox">Mode</label>
-          <input
-            id="myCheckbox"
-            type="checkbox"
-            className="themeselector"
-            checked={darkMode}
-            onChange={handleToggle}
-          />
-        </div>
-        <Calculator darkMode={darkMode} />
-      </div>
+    <div className="page ">
+      <Calculator darkMode={darkMode} />
     </div>
   );
 }
 
 export default App;
+
+{
+  /* <div className="checkbox-container">
+        <label htmlFor="myCheckbox">Mode</label>
+        <input
+          id="myCheckbox"
+          type="checkbox"
+          className="themeselector"
+          checked={darkMode}
+          onChange={handleToggle}
+        />
+      </div> */
+}
